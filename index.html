@@ -16,6 +16,12 @@
         padding: 0px;
         background-color: #181818;
       }
+      ul{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+      }
       ::selection{
 	      color: #181818;
   	    background-color: #fffd6b;
@@ -64,6 +70,76 @@
         color: #ffdf00;
         margin: 0px 2px;
       }
+      .slider-details p{
+        color: #8f8f8f;
+        font-size: 0.9rem;
+        margin: 10px 0px 10px 0px;
+      }
+      .movie-cast{
+        display: flex;
+        align-items: center;
+      }
+      .movie-cast a{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0px 4px;
+      }
+      .movie-cast a img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .more-cast{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #b4b4b4;
+        color: #cecece;
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin: 0px 4px;
+      }
+      .card-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .card-btns a{
+        min-width: 160px;
+        height: 40px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 0.9rem;
+      }
+      .play-btn{
+        background-color: #0d6bf7;
+      }
+      .play-btn i{
+        margin-right: 10px;  
+      }
+      .trailer-btn{
+        color: #cecece;
+        opacity: 0.8;
+        background-color: rgba(0,0,0,0.2);
+        border: 1px solid #363636;
+      }
+      .card-btns a:hover{
+        background-color: #f8346f;
+        transition: all ease 0.3s;
+        color: #ffffff;
+        border: none;
+        opacity: 1;
+      }
     </style>
     <script crossorigin='anonymous' src='https://kit.fontawesome.com/c8e4d183c2.js'></script>
   </head>
@@ -106,6 +182,22 @@
             <a href='#'>
               <i class='far fa-star'></i>	
             </a>
+          </div>
+          <!--{{ movie-details }}-->
+          <p>Cuando el anciano Meyer Lansky es investigado por última vez por los federales que sospechan que ha escondido millones de dólares durante medio siglo, el gángster retirado cuenta una historia vertiginosa que revela la verdad no contada sobre su vida como el notorio jefe de Murder Inc. y el Sindicato Nacional del Crimen.</p>
+          <!--{{ movie-cast }}-->
+          <div class='movie-cast'>
+            <a href='#'><img alt='cast' src='https://www.themoviedb.org/t/p/w138_and_h175_face/c1KlwOAlnFhBWfcPIvA6hmrElb6.jpg'></a>
+            <a href='#'><img alt='cast' src='https://www.themoviedb.org/t/p/w138_and_h175_face/blKKsHlJIL9PmUQZB8f3YmMBW5Y.jpg'></a>
+            <a href='#'><img alt='cast' src='https://www.themoviedb.org/t/p/w138_and_h175_face/smLwDbuUhfOAEohgtCm2YKZbGZW.jpg'></a>
+            <a href='#'><img alt='cast' src='https://www.themoviedb.org/t/p/w138_and_h175_face/40rLdQZlAPzDmizuDdb2uaSlFvC.jpg'></a>
+            <a href='#'><img alt='cast' src='https://www.themoviedb.org/t/p/w138_and_h175_face/u71mHttq4ShuhoR5zuIzKR2i3YU.jpg'></a>
+            <a class='more-cast' href='#'>9+</a>
+            <!--{{ btns }}-->
+            <div class='card-btns'>
+              <a class='trailer-btn' href='#'>Ver Tráiler</a>
+              <a class='play-btn' href='#'><i class='fas fa-play'></i>Reproducir</a>            
+            </div>
           </div>
         </div>
       
